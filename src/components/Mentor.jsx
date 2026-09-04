@@ -23,17 +23,47 @@ export default function Mentor() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
           {/* Chap ustun: Real Rasm va Profil */}
           <div className="lg:col-span-4 flex flex-col items-center text-center space-y-4 border-b lg:border-b-0 lg:border-r border-slate-100 pb-6 lg:pb-0 lg:pr-8">
-            <div className="relative">
-              <div className="w-36 h-44 sm:w-44 sm:h-52 rounded-2xl overflow-hidden shadow-xl ring-4 ring-slate-100 bg-slate-100">
-                <img
-                  src="/mentor.jpg"
-                  alt="Reyimberdiyev Temurbek - IT Park Xorazm Mentori"
-                  className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-300"
-                />
-              </div>
-              <div className="absolute -bottom-2.5 left-1/2 -translate-x-1/2 bg-[#27ae60] text-white text-[10px] font-bold px-3 py-1 rounded-full shadow-sm flex items-center gap-1 whitespace-nowrap">
-                <CheckCircle2 className="w-3 h-3" />
-                <span>Tasdiqlangan Mutaxassis</span>
+            {/* Chiroyli Mentor Foto Kartasi */}
+            <div className="relative group w-full max-w-[230px] sm:max-w-[250px] mx-auto">
+              {/* Orqa fon nur effekti (Ambient Glow) */}
+              <div className="absolute -inset-1.5 bg-gradient-to-tr from-[#104c96] via-[#00a896] to-emerald-400 rounded-[28px] blur-md opacity-30 group-hover:opacity-60 transition duration-500 pointer-events-none"></div>
+
+              {/* Tashqi rom (Premium Frame) */}
+              <div className="relative rounded-[26px] p-1.5 bg-gradient-to-b from-white via-slate-100 to-slate-200 shadow-2xl border border-white/90">
+                {/* Rasm konteyneri */}
+                <div className="relative rounded-[20px] overflow-hidden aspect-[3/4] bg-slate-900 shadow-inner">
+                  <img
+                    src="/mentor.jpg"
+                    alt="Reyimberdiyev Temurbek - IT Park Xorazm Mentori"
+                    className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
+                  />
+
+                  {/* Nozik gradient qoplama */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-slate-950/85 via-slate-950/15 to-transparent pointer-events-none"></div>
+
+                  {/* Yuqori chap: Jonli Status Badge */}
+                  <div className="absolute top-2.5 left-2.5 bg-slate-900/80 backdrop-blur-md text-white text-[10px] font-bold px-2.5 py-1 rounded-lg border border-white/15 flex items-center gap-1.5 shadow-sm">
+                    <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Bosh Mentor</span>
+                  </div>
+
+                  {/* Yuqori o'ng: IT Park Badge */}
+                  <div className="absolute top-2.5 right-2.5 bg-white/90 backdrop-blur-md text-slate-900 text-[10px] font-extrabold px-2 py-1 rounded-lg border border-white/80 shadow-sm flex items-center gap-1">
+                    <Building2 className="w-3 h-3 text-[#104c96]" />
+                    <span>IT Park</span>
+                  </div>
+
+                  {/* Pastki oyna uslubidagi axborot chizig'i (Glassmorphic pill) */}
+                  <div className="absolute bottom-2.5 inset-x-2.5 p-2 rounded-xl bg-slate-900/80 backdrop-blur-md border border-white/15 text-white text-center shadow-lg">
+                    <div className="flex items-center justify-center gap-1 text-[11px] font-extrabold text-white">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                      <span>Tasdiqlangan Mutaxassis</span>
+                    </div>
+                    <p className="text-[9px] text-teal-200/90 font-medium mt-0.5">
+                      Bakalavr & Magistr • 5+ yil tajriba
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
 
