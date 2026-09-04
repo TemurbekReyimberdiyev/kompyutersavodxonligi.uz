@@ -67,37 +67,37 @@ export default function LessonsSection({ onOpenPreview }) {
               {/* Modul Sarlavhasi (Bosiladigan Accordion Bar) */}
               <button
                 onClick={() => toggleModule(mod.id)}
-                className={`w-full p-4 sm:p-5 flex items-center justify-between gap-3 sm:gap-4 transition-colors text-left cursor-pointer ${
-                  isOpen ? 'bg-slate-50/70' : 'hover:bg-slate-50/80'
+                className={`w-full p-3.5 sm:p-5 flex items-center justify-between gap-2.5 sm:gap-4 transition-colors text-left cursor-pointer active:bg-slate-100/60 ${
+                  isOpen ? 'bg-slate-50/80' : 'hover:bg-slate-50/80'
                 }`}
               >
-                <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+                <div className="flex items-center gap-2.5 sm:gap-4 min-w-0 flex-1">
                   <div
                     style={{ backgroundColor: mod.color }}
-                    className="w-10 h-10 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-white font-black text-xs sm:text-sm shrink-0 shadow-xs"
+                    className="w-9 h-9 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-white font-black text-xs sm:text-sm shrink-0 shadow-xs"
                   >
                     0{mod.id}
                   </div>
-                  <div className="min-w-0">
-                    <h3 className="text-sm sm:text-base lg:text-lg font-extrabold text-slate-900 truncate">
+                  <div className="min-w-0 flex-1 pr-1">
+                    <h3 className="text-xs xs:text-sm sm:text-base lg:text-lg font-extrabold text-slate-900 leading-snug break-words">
                       {mod.title}
                     </h3>
-                    <p className="text-xs text-slate-500 truncate mt-0.5 font-normal">
+                    <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5 font-normal line-clamp-1 sm:line-clamp-none">
                       {mod.subtitle}
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-center gap-2 sm:gap-3 shrink-0">
-                  <span className="text-[11px] sm:text-xs font-bold bg-[#e8f8f0] text-[#27ae60] border border-[#27ae60]/20 px-2 sm:px-3 py-1 rounded-lg whitespace-nowrap">
-                    {mod.lessonsCount} ta dars
+                <div className="flex items-center gap-1.5 sm:gap-3 shrink-0">
+                  <span className="text-[10px] sm:text-xs font-bold bg-[#e8f8f0] text-[#27ae60] border border-[#27ae60]/20 px-2 sm:px-3 py-1 rounded-lg whitespace-nowrap">
+                    {mod.lessonsCount} dars
                   </span>
                   <div
-                    className={`w-8 h-8 rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 transition-transform duration-200 shrink-0 ${
+                    className={`w-7 h-7 sm:w-8 sm:h-8 rounded-lg sm:rounded-xl bg-slate-100 flex items-center justify-center text-slate-600 transition-transform duration-200 shrink-0 ${
                       isOpen ? 'rotate-180 bg-blue-50 text-[#104c96]' : ''
                     }`}
                   >
-                    <ChevronDown className="w-4 h-4" />
+                    <ChevronDown className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                   </div>
                 </div>
               </button>
@@ -106,15 +106,15 @@ export default function LessonsSection({ onOpenPreview }) {
               {isOpen && (
                 <div className="border-t border-slate-100 bg-white">
                   {/* MOBILE VIEW (< 640px): Thumb-friendly responsive card list */}
-                  <div className="block sm:hidden divide-y divide-slate-100 p-3 space-y-3">
+                  <div className="block sm:hidden p-3 space-y-3">
                     {mod.lessons.map((lesson) => (
                       <div
                         key={lesson.number}
-                        className="pt-3 first:pt-0 space-y-2.5 bg-slate-50/50 p-3.5 rounded-xl border border-slate-200/60"
+                        className="space-y-2.5 bg-slate-50/70 p-3.5 rounded-2xl border border-slate-200/80 shadow-2xs"
                       >
                         {/* Top info row */}
                         <div className="flex items-center justify-between gap-2">
-                          <div className="flex items-center gap-2">
+                          <div className="flex items-center gap-1.5 flex-wrap">
                             <span className="inline-block font-mono font-bold text-xs px-2 py-0.5 rounded-md bg-[#e8f8f0] text-[#27ae60] border border-[#27ae60]/20">
                               Dars {lesson.number < 10 ? `0${lesson.number}` : lesson.number}
                             </span>
@@ -130,7 +130,7 @@ export default function LessonsSection({ onOpenPreview }) {
                             )}
                           </div>
 
-                          <div className="flex items-center gap-1 text-[11px] text-slate-500 font-medium">
+                          <div className="flex items-center gap-1 text-[11px] text-slate-500 font-medium shrink-0">
                             <Clock className="w-3 h-3 text-slate-400" />
                             <span>{lesson.duration}</span>
                           </div>
@@ -138,7 +138,7 @@ export default function LessonsSection({ onOpenPreview }) {
 
                         {/* Title & Desc */}
                         <div>
-                          <h4 className="font-bold text-slate-900 text-sm">
+                          <h4 className="font-bold text-slate-900 text-sm leading-snug">
                             {lesson.title}
                           </h4>
                           <p className="text-xs text-slate-500 mt-1 leading-relaxed">
@@ -151,7 +151,7 @@ export default function LessonsSection({ onOpenPreview }) {
                           {lesson.isPreview ? (
                             <button
                               onClick={onOpenPreview}
-                              className="w-full inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold py-2.5 px-4 rounded-xl shadow-xs transition-all active:scale-95 cursor-pointer min-h-[42px]"
+                              className="w-full inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white text-xs font-bold py-2.5 px-4 rounded-xl shadow-xs transition-all active:scale-95 cursor-pointer min-h-[44px]"
                             >
                               <Play className="w-3.5 h-3.5 fill-white" />
                               <span>1-Darsni ko'rish (Bepul)</span>
@@ -161,7 +161,7 @@ export default function LessonsSection({ onOpenPreview }) {
                               href="https://t.me/temuurbek_21"
                               target="_blank"
                               rel="noreferrer"
-                              className="w-full inline-flex items-center justify-center gap-2 bg-[#0088cc] hover:bg-[#007cb8] text-white text-xs font-bold py-2.5 px-4 rounded-xl shadow-xs transition-all active:scale-95 min-h-[42px]"
+                              className="w-full inline-flex items-center justify-center gap-2 bg-[#0088cc] hover:bg-[#007cb8] text-white text-xs font-bold py-2.5 px-4 rounded-xl shadow-xs transition-all active:scale-95 min-h-[44px]"
                             >
                               <Send className="w-3.5 h-3.5" />
                               <span>Telegram guruhda ochish</span>

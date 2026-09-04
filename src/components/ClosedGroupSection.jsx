@@ -21,7 +21,7 @@ export default function ClosedGroupSection() {
       </div>
 
       {/* Asosiy Showcase Karta */}
-      <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xl shadow-slate-200/50 p-4 sm:p-8 lg:p-10 space-y-8">
+      <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xl shadow-slate-200/50 p-3.5 sm:p-8 lg:p-10 space-y-6 sm:space-y-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
           {/* Telegram Mockup & Image */}
           <div className="lg:col-span-7">
@@ -30,28 +30,28 @@ export default function ClosedGroupSection() {
               onClick={() => setIsZoomed(true)}
             >
               {/* Telegram Desktop Titlebar */}
-              <div className="bg-slate-800/90 text-slate-300 text-xs px-4 py-2.5 flex items-center justify-between border-b border-slate-700/60 select-none">
-                <div className="flex items-center gap-2">
-                  <div className="w-2.5 h-2.5 rounded-full bg-[#0088cc]"></div>
-                  <span className="font-semibold text-white text-[11px] sm:text-xs">Kompyuter Savodxonligi Materiallar</span>
+              <div className="bg-slate-800/90 text-slate-300 text-xs px-3 sm:px-4 py-2 sm:py-2.5 flex items-center justify-between border-b border-slate-700/60 select-none">
+                <div className="flex items-center gap-2 min-w-0 flex-1 mr-2">
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#0088cc] shrink-0"></div>
+                  <span className="font-semibold text-white text-[11px] sm:text-xs truncate">Kompyuter Savodxonligi Materiallar</span>
                 </div>
-                <div className="flex items-center gap-1.5 text-[10px] text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded-md font-medium border border-emerald-500/20">
+                <div className="flex items-center gap-1 text-[10px] text-emerald-400 bg-emerald-950/60 px-2 py-0.5 rounded-md font-medium border border-emerald-500/20 shrink-0">
                   <Lock className="w-2.5 h-2.5" />
                   <span>Yopiq Kanal</span>
                 </div>
               </div>
 
               {/* Rasm */}
-              <div className="relative overflow-hidden bg-slate-100 flex items-center justify-center">
+              <div className="relative overflow-hidden bg-slate-950 flex items-center justify-center min-h-[200px]">
                 <img
                   src="/telegram-group.png"
                   alt="Yopiq Telegram Kanal - Kompyuter Savodxonligi Materiallar"
-                  className="w-full h-auto max-h-[520px] object-contain transition-transform duration-300 group-hover:scale-[1.01]"
+                  className="w-full h-auto max-h-[500px] object-contain transition-transform duration-300 group-hover:scale-[1.01]"
                   loading="lazy"
                 />
 
                 {/* Hover Zoom Badge */}
-                <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 bg-slate-900/85 backdrop-blur-md text-white text-[11px] sm:text-xs font-semibold px-3 py-1.5 rounded-xl flex items-center gap-1.5 shadow-md">
+                <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 bg-slate-900/85 backdrop-blur-md text-white text-[10px] sm:text-xs font-semibold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl flex items-center gap-1.5 shadow-md">
                   <Maximize2 className="w-3.5 h-3.5" />
                   <span>Kattalashtirib ko'rish</span>
                 </div>
@@ -167,7 +167,7 @@ export default function ClosedGroupSection() {
         </div>
 
         {/* CTA Banner */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-850 to-[#104c96] text-white shadow-lg">
+        <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-4 p-4 sm:p-5 rounded-2xl bg-gradient-to-r from-slate-900 via-slate-850 to-[#104c96] text-white shadow-lg">
           <div className="text-center sm:text-left">
             <div className="inline-flex items-center gap-1.5 text-xs text-teal-300 font-semibold mb-1">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
@@ -185,7 +185,7 @@ export default function ClosedGroupSection() {
             href="https://t.me/temuurbek_21"
             target="_blank"
             rel="noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0088cc] to-[#00a896] hover:from-[#007cb8] hover:to-[#009688] text-white text-xs px-6 py-3 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all active:scale-95 shrink-0 cursor-pointer min-h-[44px]"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-[#0088cc] to-[#00a896] hover:from-[#007cb8] hover:to-[#009688] text-white text-xs px-6 py-3.5 rounded-xl font-bold shadow-lg hover:shadow-xl transition-all active:scale-95 shrink-0 cursor-pointer min-h-[48px]"
           >
             <Send className="w-4 h-4" />
             <span>Yopiq guruhga qo'shilish</span>

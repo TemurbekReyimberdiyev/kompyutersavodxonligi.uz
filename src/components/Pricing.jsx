@@ -20,7 +20,7 @@ export default function Pricing() {
         </div>
 
         {/* Main Card */}
-        <div className="bg-white rounded-3xl p-5 sm:p-8 lg:p-10 shadow-xl shadow-slate-200/60 border border-slate-200/90 text-left relative overflow-hidden">
+        <div className="bg-white rounded-3xl p-4 sm:p-8 lg:p-10 shadow-xl shadow-slate-200/60 border border-slate-200/90 text-left relative overflow-hidden">
           {/* Top Decorative Strip */}
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#104c96] via-[#00a896] to-[#27ae60]"></div>
 
@@ -40,7 +40,7 @@ export default function Pricing() {
             </div>
 
             <div className="text-left sm:text-right shrink-0">
-              <div className="flex items-center gap-2 sm:justify-end">
+              <div className="flex items-baseline gap-2 sm:justify-end flex-wrap">
                 <span className="text-3xl sm:text-4xl font-black text-[#104c96] tracking-tight">
                   199,000
                 </span>
@@ -99,9 +99,9 @@ export default function Pricing() {
               href="https://t.me/temuurbek_21"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#0088cc] via-[#104c96] to-[#00a896] hover:opacity-95 text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-blue-900/15 hover:shadow-2xl hover:-translate-y-0.5 transition-all active:scale-95 cursor-pointer min-h-[52px]"
+              className="w-full py-4 px-4 sm:px-6 rounded-2xl bg-gradient-to-r from-[#0088cc] via-[#104c96] to-[#00a896] hover:opacity-95 text-white font-extrabold text-xs xs:text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-blue-900/15 hover:shadow-2xl hover:-translate-y-0.5 transition-all active:scale-95 cursor-pointer min-h-[52px] text-center"
             >
-              <Send className="w-5 h-5" />
+              <Send className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
               <span>Sotib olish uchun Telegramga yozish (@temuurbek_21)</span>
             </a>
 

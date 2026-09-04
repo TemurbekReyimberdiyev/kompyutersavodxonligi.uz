@@ -95,20 +95,20 @@ export default function Mentor() {
             </div>
 
             {/* 3 ta Kichik Statistika Bloki */}
-            <div className="grid grid-cols-3 gap-2 sm:gap-3 pt-1">
-              <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
-                <div className="text-lg xs:text-xl sm:text-2xl font-black text-[#104c96]">5+ yil</div>
-                <div className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 font-medium leading-tight">Amaliy tajriba</div>
+            <div className="grid grid-cols-3 gap-1.5 xs:gap-2 sm:gap-3 pt-1">
+              <div className="p-2 xs:p-3 sm:p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
+                <div className="text-base xs:text-xl sm:text-2xl font-black text-[#104c96]">5+ yil</div>
+                <div className="text-[9px] xs:text-[10px] sm:text-[11px] text-slate-500 mt-0.5 font-medium leading-tight">Amaliy tajriba</div>
               </div>
 
-              <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
-                <div className="text-lg xs:text-xl sm:text-2xl font-black text-[#00a896]">1,000+</div>
-                <div className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 font-medium leading-tight">Shogirdlar soni</div>
+              <div className="p-2 xs:p-3 sm:p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
+                <div className="text-base xs:text-xl sm:text-2xl font-black text-[#00a896]">1,000+</div>
+                <div className="text-[9px] xs:text-[10px] sm:text-[11px] text-slate-500 mt-0.5 font-medium leading-tight">Shogirdlar</div>
               </div>
 
-              <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
-                <div className="text-lg xs:text-xl sm:text-2xl font-black text-[#27ae60]">100%</div>
-                <div className="text-[10px] sm:text-[11px] text-slate-500 mt-0.5 font-medium leading-tight">Amaliy natija</div>
+              <div className="p-2 xs:p-3 sm:p-3.5 rounded-2xl bg-slate-50 border border-slate-200/80 text-center">
+                <div className="text-base xs:text-xl sm:text-2xl font-black text-[#27ae60]">100%</div>
+                <div className="text-[9px] xs:text-[10px] sm:text-[11px] text-slate-500 mt-0.5 font-medium leading-tight">Amaliy natija</div>
               </div>
             </div>
           </div>
