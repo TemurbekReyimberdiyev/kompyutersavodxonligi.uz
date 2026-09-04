@@ -3,24 +3,24 @@ import { Send, Check, ShieldCheck, Sparkles, Zap, Lock } from 'lucide-react';
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-16 bg-slate-50 border-t border-slate-200/80">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6">
+    <section id="pricing" className="py-16 sm:py-20 bg-slate-50 border-t border-slate-200/80">
+      <div className="max-w-3xl lg:max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="text-center space-y-2 mb-8">
-          <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-50 border border-emerald-200/80 text-emerald-700 text-xs font-bold shadow-xs">
+        <div className="text-center space-y-3 mb-8 sm:mb-10">
+          <div className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200/80 text-emerald-700 text-xs font-bold shadow-xs">
             <Sparkles className="w-3.5 h-3.5" />
             <span>Eng Qulay va To'liq Ta'rif</span>
           </div>
-          <h2 className="text-2xl sm:text-4xl font-black text-slate-900 tracking-tight">
+          <h2 className="text-2xl xs:text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
             Kurs Narxi va Yopiq Guruhga Kirish
           </h2>
-          <p className="text-xs sm:text-sm text-slate-500 max-w-md mx-auto">
+          <p className="text-xs sm:text-sm text-slate-500 max-w-md mx-auto px-2 sm:px-0 leading-relaxed">
             Bir martalik to'lov evaziga barcha 24 ta dars va materiallarga umrbod ega bo'lasiz.
           </p>
         </div>
 
         {/* Main Card */}
-        <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-xl shadow-slate-200/60 border border-slate-200/90 text-left relative overflow-hidden">
+        <div className="bg-white rounded-3xl p-5 sm:p-8 lg:p-10 shadow-xl shadow-slate-200/60 border border-slate-200/90 text-left relative overflow-hidden">
           {/* Top Decorative Strip */}
           <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-[#104c96] via-[#00a896] to-[#27ae60]"></div>
 
@@ -99,20 +99,20 @@ export default function Pricing() {
               href="https://t.me/temuurbek_21"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#0088cc] via-[#104c96] to-[#00a896] hover:opacity-95 text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-blue-900/15 hover:shadow-2xl hover:-translate-y-0.5 transition-all active:scale-95 cursor-pointer"
+              className="w-full py-4 px-6 rounded-2xl bg-gradient-to-r from-[#0088cc] via-[#104c96] to-[#00a896] hover:opacity-95 text-white font-extrabold text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-blue-900/15 hover:shadow-2xl hover:-translate-y-0.5 transition-all active:scale-95 cursor-pointer min-h-[52px]"
             >
               <Send className="w-5 h-5" />
               <span>Sotib olish uchun Telegramga yozish (@temuurbek_21)</span>
             </a>
 
-            <div className="pt-4 flex flex-wrap items-center justify-center gap-4 text-[11px] text-slate-500 font-medium">
+            <div className="pt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[11px] text-slate-500 font-medium">
               <span className="flex items-center gap-1 text-slate-600">
                 <ShieldCheck className="w-3.5 h-3.5 text-[#27ae60]" />
                 100% Xavfsiz to'lov
               </span>
               <span>•</span>
               <span>Click / Payme / Uzum Bank</span>
-              <span>•</span>
+              <span className="hidden xs:inline">•</span>
               <span>To'lovdan so'ng darhol guruhga qo'shilasiz</span>
             </div>
           </div>
