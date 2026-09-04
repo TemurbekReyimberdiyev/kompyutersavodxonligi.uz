@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import VideoPreview from './components/VideoPreview';
 import LessonsSection from './components/LessonsSection';
+import ClosedGroupSection from './components/ClosedGroupSection';
 import CertificateSection from './components/CertificateSection';
 import Mentor from './components/Mentor';
 import Pricing from './components/Pricing';
@@ -36,6 +37,9 @@ export default function App() {
         <LessonsSection
           onOpenPreview={() => handleNavigate('preview')}
         />
+
+        {/* Yopiq Telegram Kanal & Materiallar Bazasi */}
+        <ClosedGroupSection />
 
         {/* Official Certificate Section */}
         <CertificateSection />

@@ -19,9 +19,11 @@ export default function Footer() {
           <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[11px] text-slate-400">
             <a href="#lessons" className="hover:text-white transition-colors">24 ta Dars</a>
             <span className="text-slate-700">•</span>
-            <a href="#preview" className="hover:text-white transition-colors">Bepul Video</a>
+            <a href="#group" className="hover:text-white transition-colors">Yopiq Guruh</a>
             <span className="text-slate-700">•</span>
             <a href="#certificate" className="hover:text-white transition-colors">Sertifikat</a>
+            <span className="text-slate-700">•</span>
+            <a href="#preview" className="hover:text-white transition-colors">Bepul Video</a>
             <span className="text-slate-700">•</span>
             <a href="#mentor" className="hover:text-white transition-colors">Mentor</a>
             <span className="text-slate-700">•</span>

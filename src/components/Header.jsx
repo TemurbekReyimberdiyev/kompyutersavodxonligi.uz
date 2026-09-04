@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Send, Menu, X, BookOpen, Award, Play, UserCheck, DollarSign } from 'lucide-react';
+import { Send, Menu, X, BookOpen, Award, Play, UserCheck, DollarSign, Lock } from 'lucide-react';
 
 export default function Header({ onNavigate }) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -36,33 +36,39 @@ export default function Header({ onNavigate }) {
         <nav className="hidden md:flex items-center gap-1 lg:gap-2 text-xs lg:text-sm font-semibold text-slate-600">
           <button
             onClick={() => handleNavClick('lessons')}
-            className="px-2.5 lg:px-3.5 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-900 transition-colors cursor-pointer"
+            className="px-2.5 lg:px-3 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-900 transition-colors cursor-pointer"
           >
             24 ta Dars
           </button>
           <button
+            onClick={() => handleNavClick('group')}
+            className="px-2.5 lg:px-3 py-1.5 rounded-lg hover:bg-blue-50 text-[#0088cc] font-bold transition-colors cursor-pointer"
+          >
+            Yopiq Guruh
+          </button>
+          <button
             onClick={() => handleNavClick('certificate')}
-            className="px-2.5 lg:px-3.5 py-1.5 rounded-lg hover:bg-emerald-50 text-emerald-700 font-bold transition-colors cursor-pointer"
+            className="px-2.5 lg:px-3 py-1.5 rounded-lg hover:bg-emerald-50 text-emerald-700 font-bold transition-colors cursor-pointer"
           >
             Sertifikat
           </button>
           <button
             onClick={() => handleNavClick('preview')}
-            className="px-2.5 lg:px-3.5 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-900 transition-colors cursor-pointer"
+            className="px-2.5 lg:px-3 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-900 transition-colors cursor-pointer"
           >
             Bepul Video
           </button>
           <button
             onClick={() => handleNavClick('mentor')}
-            className="px-2.5 lg:px-3.5 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-900 transition-colors cursor-pointer"
+            className="px-2.5 lg:px-3 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-900 transition-colors cursor-pointer"
           >
             Mentor
           </button>
           <button
             onClick={() => handleNavClick('pricing')}
-            className="px-2.5 lg:px-3.5 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-900 transition-colors cursor-pointer"
+            className="px-2.5 lg:px-3 py-1.5 rounded-lg hover:bg-slate-100 hover:text-slate-900 transition-colors cursor-pointer"
           >
-            Narx va Guruh
+            Narx
           </button>
         </nav>
 
@@ -103,6 +109,14 @@ export default function Header({ onNavigate }) {
           >
             <BookOpen className="w-4 h-4 text-[#104c96]" />
             <span>24 ta Amaliy Dars (Jadvallar)</span>
+          </button>
+
+          <button
+            onClick={() => handleNavClick('group')}
+            className="w-full flex items-center gap-3 px-4 py-3 rounded-xl bg-blue-50/70 text-blue-800 font-bold text-sm text-left transition-colors cursor-pointer"
+          >
+            <Lock className="w-4 h-4 text-[#0088cc]" />
+            <span>Yopiq Telegram Guruh & Materiallar</span>
           </button>
 
           <button
