@@ -22,31 +22,47 @@ export default function ClosedGroupSection() {
 
       {/* Asosiy Showcase Karta */}
       <div className="bg-white rounded-3xl border border-slate-200/90 shadow-xl shadow-slate-200/50 p-3.5 sm:p-8 lg:p-10 space-y-6 sm:space-y-8">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-center">
-          {/* Telegram Mockup & Image (Clean, No Black Bars) */}
-          <div className="lg:col-span-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-10 items-center">
+          {/* Telegram Mockup & Image (Ramkali va Yopiq Guruh Yozuvlari) */}
+          <div className="lg:col-span-7">
             <div
-              className="relative group cursor-pointer rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-200 shadow-xl shadow-slate-200/60 bg-white transition-all duration-300 hover:shadow-2xl"
+              className="relative group cursor-pointer rounded-2xl sm:rounded-3xl overflow-hidden border border-slate-700/80 shadow-2xl shadow-slate-900/25 bg-slate-900 transition-all duration-300 hover:shadow-2xl hover:border-slate-600"
               onClick={() => setIsZoomed(true)}
             >
-              {/* Haqiqiy Telegram skrinshoti - to'liq enli va tabiiy o'lchamda */}
-              <img
-                src="/telegram-group.png"
-                alt="Yopiq Telegram Kanal - Kompyuter Savodxonligi Materiallar"
-                className="w-full h-auto block transition-transform duration-300 group-hover:scale-[1.01]"
-                loading="lazy"
-              />
+              {/* Telegram Desktop Titlebar - Ramka va Yopiq Guruh Yozuvlari */}
+              <div className="bg-slate-800 text-slate-300 text-xs px-3.5 sm:px-4 py-2.5 flex items-center justify-between border-b border-slate-700/80 select-none">
+                <div className="flex items-center gap-2 min-w-0 flex-1 mr-2">
+                  <div className="w-2.5 h-2.5 rounded-full bg-[#0088cc] shrink-0 shadow-xs"></div>
+                  <span className="font-semibold text-white text-[11px] sm:text-xs truncate">
+                    Kompyuter Savodxonligi Materiallar
+                  </span>
+                </div>
+                <div className="flex items-center gap-1.5 text-[10px] sm:text-[11px] text-emerald-400 bg-emerald-950/70 px-2.5 py-1 rounded-md font-bold border border-emerald-500/30 shrink-0">
+                  <Lock className="w-2.5 h-2.5 sm:w-3 sm:h-3" />
+                  <span>Yopiq Guruh</span>
+                </div>
+              </div>
 
-              {/* Hover Zoom Badge */}
-              <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 bg-slate-900/85 backdrop-blur-md text-white text-[10px] sm:text-xs font-semibold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl flex items-center gap-1.5 shadow-md">
-                <Maximize2 className="w-3.5 h-3.5" />
-                <span>Kattalashtirib ko'rish</span>
+              {/* Rasm: To'liq enli (w-full), chetlarida hech qanday qora bo'shliq qolmaydi */}
+              <div className="relative overflow-hidden bg-slate-900">
+                <img
+                  src="/telegram-group.png"
+                  alt="Yopiq Telegram Guruh - Kompyuter Savodxonligi Materiallar"
+                  className="w-full h-auto block transition-transform duration-300 group-hover:scale-[1.01]"
+                  loading="lazy"
+                />
+
+                {/* Hover Zoom Badge */}
+                <div className="absolute bottom-3 right-3 sm:bottom-4 sm:right-4 bg-slate-900/85 backdrop-blur-md text-white text-[10px] sm:text-xs font-semibold px-2.5 sm:px-3 py-1 sm:py-1.5 rounded-xl flex items-center gap-1.5 shadow-md">
+                  <Maximize2 className="w-3.5 h-3.5" />
+                  <span>Kattalashtirib ko'rish</span>
+                </div>
               </div>
             </div>
           </div>
 
           {/* Dars Paketining Tarkibi (O'ng tomon) */}
-          <div className="lg:col-span-6 space-y-4">
+          <div className="lg:col-span-5 space-y-4">
             <div className="space-y-1">
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#104c96]">Har Bir Dars Tarkibi</span>
               <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">
