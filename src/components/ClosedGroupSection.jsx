@@ -15,8 +15,8 @@ export default function ClosedGroupSection() {
         <h2 className="text-2xl xs:text-3xl sm:text-4xl font-black text-slate-900 tracking-tight">
           Yopiq Telegram Kanal Qanday Ko'rinishda?
         </h2>
-        <p className="text-xs sm:text-sm text-slate-500 max-w-2xl mx-auto leading-relaxed px-2 sm:px-0">
-          Darslar shunchaki oddiy videolar emas — har bir dars uchun to'liq taqdimot, amaliy topshiriqlar va testlar tayyorlangan. Quyida yopiq guruhimizning haqiqiy ko'rinishi bilan tanishing:
+        <p className="text-xs sm:text-sm text-slate-500 max-w-xl mx-auto leading-relaxed px-2 sm:px-0">
+          Har bir dars uchun video, taqdimot, testlar va amaliy fayllar to'plami.
         </p>
       </div>
 
@@ -61,110 +61,95 @@ export default function ClosedGroupSection() {
             </div>
           </div>
 
-          {/* Dars Paketining Tarkibi (O'ng tomon) */}
+          {/* Dars Paketining Tarkibi (O'ng tomon) — Qisqa va Londa */}
           <div className="lg:col-span-5 space-y-4">
             <div className="space-y-1">
               <span className="text-[11px] font-bold uppercase tracking-wider text-[#104c96]">Har Bir Dars Tarkibi</span>
               <h3 className="text-lg sm:text-xl font-extrabold text-slate-900">
                 1 ta dars ichida nimalar beriladi?
               </h3>
-              <p className="text-xs text-slate-500 leading-relaxed">
-                Skrinshotda ko'rib turganingizdek, 1-dars misolida har bir mavzuga quyidagi materiallar to'liq ilova qilinadi:
-              </p>
             </div>
 
-            <div className="space-y-3">
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-blue-50/70 border border-blue-100/80">
-                <div className="w-9 h-9 rounded-xl bg-[#0088cc] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
-                  <Video className="w-4 h-4" />
+            <div className="space-y-2.5">
+              <div className="flex items-center justify-between gap-3 p-3 sm:p-3.5 rounded-2xl bg-blue-50/70 border border-blue-100/80">
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="w-9 h-9 rounded-xl bg-[#0088cc] text-white flex items-center justify-center shrink-0 shadow-xs">
+                    <Video className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900 truncate">1. To'liq HD Video Dars</h4>
                 </div>
-                <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">1. To'liq HD Video Dars</h4>
-                  <p className="text-[11px] text-slate-600 mt-0.5 leading-relaxed">
-                    Mavzuning noldan batafsil video tushuntirilishi (har bir dars 30–45 daqiqa atrofida, yuqori sifatda).
-                  </p>
-                </div>
+                <span className="text-[10px] sm:text-xs font-bold text-blue-700 bg-blue-100/80 px-2.5 py-1 rounded-lg shrink-0">
+                  30–45 daqiqa
+                </span>
               </div>
 
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-100/80">
-                <div className="w-9 h-9 rounded-xl bg-[#27ae60] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
-                  <FileText className="w-4 h-4" />
+              <div className="flex items-center justify-between gap-3 p-3 sm:p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-100/80">
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="w-9 h-9 rounded-xl bg-[#27ae60] text-white flex items-center justify-center shrink-0 shadow-xs">
+                    <FileText className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900 truncate">2. Taqdimot va Slaydlar</h4>
                 </div>
-                <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">2. Taqdimot va Slaydlar (PDF)</h4>
-                  <p className="text-[11px] text-slate-600 mt-0.5 leading-relaxed">
-                    Darsning rasmiy slaydlari — konspekt qilish, qayta takrorlash va chop etish uchun tayyor fayl.
-                  </p>
-                </div>
+                <span className="text-[10px] sm:text-xs font-bold text-emerald-700 bg-emerald-100/80 px-2.5 py-1 rounded-lg shrink-0">
+                  PDF format
+                </span>
               </div>
 
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-amber-50/70 border border-amber-100/80">
-                <div className="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
-                  <CheckCircle2 className="w-4 h-4" />
+              <div className="flex items-center justify-between gap-3 p-3 sm:p-3.5 rounded-2xl bg-amber-50/70 border border-amber-100/80">
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center shrink-0 shadow-xs">
+                    <CheckCircle2 className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900 truncate">3. Amaliy Test Topshiriqlari</h4>
                 </div>
-                <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">3. Amaliy Test Topshiriqlari (DOCX)</h4>
-                  <p className="text-[11px] text-slate-600 mt-0.5 leading-relaxed">
-                    O'rgangan bilimlaringizni amalda mustahkamlash uchun Word formatidagi maxsus tuzilgan test savollari.
-                  </p>
-                </div>
+                <span className="text-[10px] sm:text-xs font-bold text-amber-700 bg-amber-100/80 px-2.5 py-1 rounded-lg shrink-0">
+                  DOCX test
+                </span>
               </div>
 
-              <div className="flex items-start gap-3 p-3.5 rounded-2xl bg-teal-50/70 border border-teal-100/80">
-                <div className="w-9 h-9 rounded-xl bg-[#00a896] text-white flex items-center justify-center shrink-0 shadow-sm mt-0.5">
-                  <HelpCircle className="w-4 h-4" />
+              <div className="flex items-center justify-between gap-3 p-3 sm:p-3.5 rounded-2xl bg-teal-50/70 border border-teal-100/80">
+                <div className="flex items-center gap-3 min-w-0">
+                  <div className="w-9 h-9 rounded-xl bg-[#00a896] text-white flex items-center justify-center shrink-0 shadow-xs">
+                    <HelpCircle className="w-4 h-4" />
+                  </div>
+                  <h4 className="text-xs sm:text-sm font-bold text-slate-900 truncate">4. Test Javoblari va Tahlili</h4>
                 </div>
-                <div>
-                  <h4 className="text-xs sm:text-sm font-bold text-slate-900">4. Test Javoblari va Tahlili (TXT)</h4>
-                  <p className="text-[11px] text-slate-600 mt-0.5 leading-relaxed">
-                    O'z javoblaringizni tekshirish, xatolarni tushunish va xolis baholash uchun tayyor kalitlar.
-                  </p>
-                </div>
+                <span className="text-[10px] sm:text-xs font-bold text-teal-700 bg-teal-100/80 px-2.5 py-1 rounded-lg shrink-0">
+                  TXT kalitlar
+                </span>
               </div>
             </div>
           </div>
         </div>
 
-        {/* 4 ta Asosiy Kafolat */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 pt-2 border-t border-slate-100">
-          <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-            <div className="w-8 h-8 rounded-xl bg-blue-100 text-[#0088cc] flex items-center justify-center mb-2 font-bold">
+        {/* 4 ta Asosiy Afzallik — Qisqa va Londa (Sarlavhaning o'zi) */}
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4 pt-4 border-t border-slate-100">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50/90 border border-slate-200/80 flex items-center gap-3 hover:bg-slate-100/80 transition-colors">
+            <div className="w-9 h-9 rounded-xl bg-blue-100 text-[#0088cc] flex items-center justify-center shrink-0 font-bold shadow-xs">
               <Download className="w-4 h-4" />
             </div>
-            <h5 className="text-xs sm:text-sm font-extrabold text-slate-900">Bir Umrlik Kirish</h5>
-            <p className="text-[11px] text-slate-500 mt-0.5">
-              Guruhdagi barcha materiallar sizda abadiy qoladi. Istalgan payt takrorlash mumkin.
-            </p>
+            <h5 className="text-xs sm:text-sm font-extrabold text-slate-900 leading-snug">Bir Umrlik Kirish</h5>
           </div>
 
-          <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-            <div className="w-8 h-8 rounded-xl bg-emerald-100 text-[#27ae60] flex items-center justify-center mb-2 font-bold">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50/90 border border-slate-200/80 flex items-center gap-3 hover:bg-slate-100/80 transition-colors">
+            <div className="w-9 h-9 rounded-xl bg-emerald-100 text-[#27ae60] flex items-center justify-center shrink-0 font-bold shadow-xs">
               <Smartphone className="w-4 h-4" />
             </div>
-            <h5 className="text-xs sm:text-sm font-extrabold text-slate-900">Internetsiz Ko'rish</h5>
-            <p className="text-[11px] text-slate-500 mt-0.5">
-              Fayllarni telefon yoki kompyuterga saqlab, internetsiz ham foydalanishingiz mumkin.
-            </p>
+            <h5 className="text-xs sm:text-sm font-extrabold text-slate-900 leading-snug">Internetsiz Ko'rish</h5>
           </div>
 
-          <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-            <div className="w-8 h-8 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center mb-2 font-bold">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50/90 border border-slate-200/80 flex items-center gap-3 hover:bg-slate-100/80 transition-colors">
+            <div className="w-9 h-9 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center shrink-0 font-bold shadow-xs">
               <Sparkles className="w-4 h-4" />
             </div>
-            <h5 className="text-xs sm:text-sm font-extrabold text-slate-900">Tartibli Navigatsiya</h5>
-            <p className="text-[11px] text-slate-500 mt-0.5">
-              Qadalgan xabarlar orqali 1-darsdan 24-darsgacha tartib bilan terilgan.
-            </p>
+            <h5 className="text-xs sm:text-sm font-extrabold text-slate-900 leading-snug">Tartibli Navigatsiya</h5>
           </div>
 
-          <div className="p-4 rounded-2xl bg-slate-50 border border-slate-200/80">
-            <div className="w-8 h-8 rounded-xl bg-teal-100 text-[#00a896] flex items-center justify-center mb-2 font-bold">
+          <div className="p-3.5 sm:p-4 rounded-2xl bg-slate-50/90 border border-slate-200/80 flex items-center gap-3 hover:bg-slate-100/80 transition-colors">
+            <div className="w-9 h-9 rounded-xl bg-teal-100 text-[#00a896] flex items-center justify-center shrink-0 font-bold shadow-xs">
               <Send className="w-4 h-4" />
             </div>
-            <h5 className="text-xs sm:text-sm font-extrabold text-slate-900">To'g'ridan-to'g'ri Mentor</h5>
-            <p className="text-[11px] text-slate-500 mt-0.5">
-              Har bir topshiriq bo'yicha Reyimberdiyev Temurbekdan bevosita maslahat olasiz.
-            </p>
+            <h5 className="text-xs sm:text-sm font-extrabold text-slate-900 leading-snug">To'g'ridan-to'g'ri Mentor</h5>
           </div>
         </div>
 
@@ -173,13 +158,13 @@ export default function ClosedGroupSection() {
           <div className="text-center sm:text-left">
             <div className="inline-flex items-center gap-1.5 text-xs text-teal-300 font-semibold mb-1">
               <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-              Guruhga qabul hozir ochiq
+              Guruhga qabul ochiq
             </div>
             <h4 className="text-sm sm:text-base font-extrabold text-white">
               Barcha 24 ta dars va materiallar bazasiga hoziroq qo'shiling!
             </h4>
             <p className="text-xs text-slate-300 mt-0.5">
-              To'lov tasdiqlangach, Telegramdagi shaxsiy taklif havolasi darhol yuboriladi.
+              To'lov tasdiqlangach, taklif havolasi darhol yuboriladi.
             </p>
           </div>
 
