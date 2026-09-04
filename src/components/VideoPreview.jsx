@@ -62,7 +62,7 @@ export default function VideoPreview() {
             className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl bg-[#0088cc] hover:bg-[#007cb8] text-white text-xs font-bold transition-all shadow-xs hover:shadow-md cursor-pointer active:scale-95"
           >
             <Send className="w-3.5 h-3.5" />
-            <span>To'liq kursga kirish (@temuurbek_21)</span>
+            <span>Telegram orqali to'liq kursga kirish</span>
           </a>
         </div>
       </div>

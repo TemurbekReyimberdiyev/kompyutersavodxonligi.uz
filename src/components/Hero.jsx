@@ -42,7 +42,7 @@ export default function Hero({ onGoToLessons, onGoToVideo }) {
             className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-white text-[#0d3b75] hover:bg-blue-50 font-extrabold text-xs sm:text-sm shadow-xl hover:shadow-2xl hover:-translate-y-0.5 transition-all flex items-center justify-center gap-2.5 active:scale-95 cursor-pointer min-h-[48px]"
           >
             <Send className="w-4 h-4 text-[#0088cc]" />
-            <span>Kursga yozilish (@temuurbek_21)</span>
+            <span>Telegram orqali yozilish</span>
           </a>
 
           <button

@@ -85,8 +85,7 @@ export default function Header({ onNavigate }) {
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-300"></span>
             </span>
             <Send className="w-3.5 h-3.5" />
-            <span className="hidden sm:inline">Telegram:</span>
-            <span className="hidden xs:inline">@temuurbek_21</span>
+            <span>Telegram</span>
           </a>
 
           {/* Mobile Hamburger Toggle Button */}
@@ -159,7 +158,7 @@ export default function Header({ onNavigate }) {
               className="w-full flex items-center justify-center gap-2 bg-[#0088cc] hover:bg-[#007cb8] text-white py-3 rounded-xl font-bold text-xs shadow-md transition-all active:scale-95"
             >
               <Send className="w-4 h-4" />
-              <span>Telegram orqali yozish (@temuurbek_21)</span>
+              <span>Telegram orqali yozish</span>
             </a>
           </div>
         </div>

@@ -117,7 +117,7 @@ export default function LessonModal({ lesson, onClose, onPlayPreview }) {
             className="w-full sm:w-auto px-6 py-3 rounded-2xl bg-gradient-to-r from-[#104c96] to-[#00a896] hover:from-[#0d3f7d] hover:to-[#008f80] text-white font-bold text-xs sm:text-sm flex items-center justify-center gap-2 shadow-md transition-all"
           >
             <Send className="w-4 h-4" />
-            <span>Kursni xarid qilish (@temuurbek_21)</span>
+            <span>Telegram orqali xarid qilish</span>
           </a>
         </div>
       </div>

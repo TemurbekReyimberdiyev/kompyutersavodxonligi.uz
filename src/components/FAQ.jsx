@@ -19,7 +19,7 @@ export default function FAQ() {
     },
     {
       q: "Savollarim bo'lsa yoki darsda tushunmay qolsam nima bo'ladi?",
-      a: "Siz yolg'iz qolmaysiz! Maxsus yopiq chatda yoki shaxsan Reyimberdiyev Temurbek (@temuurbek_21) orqali barcha savollaringizga tezkor javob olasiz."
+      a: "Siz yolg'iz qolmaysiz! Maxsus yopiq chatda yoki shaxsan Reyimberdiyev Temurbek bilan Telegram orqali barcha savollaringizga tezkor javob olasiz."
     },
     {
       q: "Kurs yakunida sertifikat beriladimi?",
@@ -27,7 +27,7 @@ export default function FAQ() {
     },
     {
       q: "Kursni qanday sotib olsam bo'ladi va to'lov qanday amalga oshiriladi?",
-      a: "To'lov Click, Payme yoki Uzum Bank orqali amalga oshiriladi. Sotib olish uchun to'g'ridan-to'g'ri Telegramdagi @temuurbek_21 akkauntiga yozing. To'lov tasdiqlangach, darhol yopiq guruhga qo'shilasiz."
+      a: "To'lov Click, Payme yoki Uzum Bank orqali amalga oshiriladi. Sotib olish uchun to'g'ridan-to'g'ri Telegram orqali yozing. To'lov tasdiqlangach, darhol yopiq guruhga qo'shilasiz."
     }
   ];
 

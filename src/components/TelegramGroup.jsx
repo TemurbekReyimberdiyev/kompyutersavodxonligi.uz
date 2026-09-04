@@ -73,7 +73,7 @@ export default function TelegramGroup() {
                 className="inline-flex items-center gap-2 bg-[#0088cc] hover:bg-[#0077b5] text-white px-7 py-3.5 rounded-full font-bold text-sm shadow-lg transition-all"
               >
                 <Send className="w-4 h-4" />
-                <span>Guruhga kirish uchun yozish (@temuurbek_21)</span>
+                <span>Telegram orqali guruhga kirish</span>
               </a>
             </div>
           </div>

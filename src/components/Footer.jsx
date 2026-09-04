@@ -37,7 +37,7 @@ export default function Footer() {
             className="inline-flex items-center gap-2 text-white bg-slate-800/80 hover:bg-slate-800 px-4 py-2.5 rounded-xl transition-all font-semibold border border-slate-700/60 shadow-sm"
           >
             <Send className="w-3.5 h-3.5 text-[#0088cc]" />
-            <span>@temuurbek_21</span>
+            <span>Telegram</span>
           </a>
         </div>
 

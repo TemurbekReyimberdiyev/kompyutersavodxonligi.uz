@@ -102,7 +102,7 @@ export default function Pricing() {
               className="w-full py-4 px-4 sm:px-6 rounded-2xl bg-gradient-to-r from-[#0088cc] via-[#104c96] to-[#00a896] hover:opacity-95 text-white font-extrabold text-xs xs:text-sm sm:text-base flex items-center justify-center gap-2.5 shadow-xl shadow-blue-900/15 hover:shadow-2xl hover:-translate-y-0.5 transition-all active:scale-95 cursor-pointer min-h-[52px] text-center"
             >
               <Send className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" />
-              <span>Sotib olish uchun Telegramga yozish (@temuurbek_21)</span>
+              <span>Telegram orqali xarid qilish</span>
             </a>
 
             <div className="pt-4 flex flex-wrap items-center justify-center gap-3 sm:gap-4 text-[11px] text-slate-500 font-medium">

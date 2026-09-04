@@ -50,7 +50,7 @@ export default function Mentor() {
               className="inline-flex items-center justify-center gap-2 bg-[#0088cc] hover:bg-[#007cb8] text-white text-xs px-5 py-3 rounded-xl font-bold shadow-md hover:shadow-lg transition-all w-full active:scale-95 cursor-pointer min-h-[44px]"
             >
               <Send className="w-3.5 h-3.5" />
-              <span>Bog'lanish: @temuurbek_21</span>
+              <span>Telegram orqali bog'lanish</span>
             </a>
           </div>
 
